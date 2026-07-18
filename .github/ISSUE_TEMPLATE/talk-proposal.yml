@@ -1,0 +1,137 @@
+name: 🎤 Talk proposal
+description: Propose a talk, demo, or lightning talk for a PyTorch Madrid meetup.
+title: "[Talk] "
+labels: ["talk-proposal", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for your interest to speak at PyTorch Madrid! 🔥
+        Please fill in the fields below. We review proposals as they come in and get back to you within a couple of weeks.
+
+  - type: input
+    id: name
+    attributes:
+      label: 👤 Your name
+      description: How you want to appear in the schedule
+      placeholder: e.g. Maria García
+    validations:
+      required: true
+
+  - type: input
+    id: role
+    attributes:
+      label: 💼 Role & affiliation (optional)
+      description: What you do and where. Skip if you'd rather not say.
+      placeholder: e.g. ML Engineer at awesome org
+    validations:
+      required: false
+
+  - type: input
+    id: title
+    attributes:
+      label: 📌 Talk title
+      description: Short and descriptive
+      placeholder: e.g. getting started with vLLM - Hands on Demo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: 🎬 Format
+      description: what kind of session
+      options:
+        - 🎙 Full talk 
+        - 🖥 Demo
+        - ⚡️ Lightning talk 
+    validations:
+      required: true
+
+  - type: textarea
+    id: abstract
+    attributes:
+      label: 📝 Abstract
+      description: 3 - 4 sentences on what you'll cover and why it's interesting for the audience
+      placeholder: |
+        What problem you're solving, what approach you took, what people will learn
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: ecosystem
+    attributes:
+      label: 🧩 PyTorch ecosystem - what does your talk touch?
+      description: Check all the projects your talk covers or uses
+      options:
+        - label: PyTorch core 
+        - label: torch.compile 
+        - label: vLLM
+        - label: DeepSpeed
+        - label: Unsloth
+        - label: ExecuTorch
+        - label: TorchServe
+        - label: Ray
+        - label: Safetensors
+        - label: Kubernetes / Kubeflow
+        - label: Other (mention in abstract)
+
+  - type: textarea
+    id: bio
+    attributes:
+      label: 🎯 Short bio
+      description: 2 - 3 sentences about you
+    validations:
+      required: true
+
+  - type: textarea
+    id: photo
+    attributes:
+      label: 📸 Speaker photo
+      description: |
+        For the website and Luma event. Either:
+        • **Drag & drop an image** into this box
+        • **Paste a public URL** (LinkedIn, personal site, X/Twitter avatar…)
+
+        Recommended: square, at least 400×400 px, well-lit, no group photos.
+      placeholder: Drop an image here or paste a URL.
+    validations:
+      required: true
+
+  - type: input
+    id: prior_talks
+    attributes:
+      label: 🎥 Prior talks or writeups (optional)
+      description: Links to past talks, blog posts, or repos that show your work.
+      placeholder: e.g. https://youtu.be/… or https://your-blog.dev/post
+    validations:
+      required: false
+
+  - type: dropdown
+    id: availability
+    attributes:
+      label: 📅 Availability
+      description: Which edition(s) work for you? You can pick more than one.
+      multiple: true
+      options:
+        - The upcoming meetup (October 2026)
+        - A future meetup (I'm flexible)
+        - Specific date (mention in "Anything else")
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: ✨ Anything else?
+      description: Special requirements, availability constraints, questions.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: ✅ Confirmation
+      options:
+        - label: I'm ok with the talk being **recorded and shared publicly** (video + slides).
+          required: false
