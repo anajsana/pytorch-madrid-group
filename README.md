@@ -3,7 +3,7 @@
 The local community for people building with PyTorch in Madrid. For developers, researchers and engineers meeting in person to share hands-on work, learn from each other's projects, and grow the local PyTorch community.
  
 🌐 **Website**: [madrid.pytorch.es](https://madrid.pytorch.es)
-🎟️ **Join the group** on Luma: _coming soon_
+🎟️ **Register for the first meetup** on Luma: [luma.com/uys5qucv](https://luma.com/uys5qucv)
 📅 **Next meetup**: October 2026
 
 ## 🎤 Propose a talk
